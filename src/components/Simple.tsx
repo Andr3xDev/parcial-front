@@ -37,6 +37,9 @@ export default function MarketForm({
 
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-96">
+            <label>
+                Name
+            </label>
             <input
                 name="name"
                 value={formData.name}
@@ -45,6 +48,9 @@ export default function MarketForm({
                 className={inputStyles}
                 required
             />{" "}
+            <label className="mt-5">
+                Type of query
+            </label>
             <input
                 name="type"
                 value={formData.type}
